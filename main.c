@@ -1,12 +1,8 @@
-/*
- * prova_git.c
- *
- * Created: 6/27/17 7:06:52 PM
- * Author : viniciuscardoso
- */ 
+#include "def_principais.h"
+#include "one_wire.h"
+#include "USART.h"
 
-#include <avr/io.h>
-
+FILE lcd_str = FDEV_SETUP_STREAM(USART_putchar, NULL, _FDEV_SETUP_WRITE);
 
 int main(void)
 {
